@@ -1,0 +1,217 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+    font-size: 15pt;
+    background: black;
+    color: white;
+    background: black;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:link{
+  color: white;
+}
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+  
+  
+}
+
+.logo{
+  width: 30%;
+  height: 30%;
+}
+ul.menu{
+  display: flex;
+}
+ul.menu li{
+  width: 80%;
+  margin: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.title{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.mywork{
+   font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px;
+}
+
+/* slider op*/
+
+.wrapper{
+  position: relative;
+  top:0;
+  left: 0px;
+  width: 100vw;
+  height: 70vh;
+  
+}
+
+ .slides{
+   position: absolute;
+   top: 0;
+   left: 0;
+
+ }
+ .slide{
+   width: 100vw;
+   height: 60vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   transition: all 1s linear;
+ }
+ .slide:nth-child(1){
+   background:  url(Image/Cars/Lc200.jpg) center center no-repeat;
+   background-size: cover;
+ }
+ .slide:nth-child(2) {
+   background:  url(Image/Cars/forester.jpg) center center no-repeat;
+   background-size: cover;
+ }
+ .slide:nth-child(3) {
+  background:  url(Image/Cars/Pajero.png) center center no-repeat;
+  background-size: cover;
+ }
+ .slide:nth-child(4) {
+   background: url(Image/Cars/patrol.jpg) center center no-repeat;
+   background-size: cover;
+ }
+  .slide:nth-child(5) {
+  background:  url(Image/Cars/Fx37.jpg) center center no-repeat;
+  background-size: cover;
+  }
+   .slide:nth-child(6) {
+  background:  url(Image/Cars/Vitara.jpg) center center no-repeat;
+     background-size: cover;
+   }
+ .slide_active{
+   opacity: 1;
+   transition: opacity 0.5 linear;
+   
+ }
+ .text{
+   padding-top: 10px;
+   text-align: center;
+   width: 70px;
+   height: 30px;
+   opacity: 1;
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+   color: white;
+   background: rgba(0, 0, 0, 0.5);
+ }
+ .container{
+   max-width: 1200px;
+   margin: 0px auto;
+   padding: 30px;
+
+ }
+ 
+ /*--------accordeon-------*/
+ .accordeon{
+  position: relative;
+  
+}
+
+.accordeon div{
+  margin: 10px;
+  box-shadow: 0 0 6px  grey;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+.hidden{
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.hidden.active{
+  height: 100%;
+  visibility: visible;
+  overflow: visible;
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+.closed{
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+ .open{
+   width: 100%;
+   height: 100%;
+   position: relative;
+   padding: 0 18px;
+   font-size: 18px;
+   font-family: 'Fira Sans Condensed', sans-serif;
+
+ }
+.open::after{
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 2px;
+  border: 6px solid transparent;
+  border-top: 6px solid skyblue;
+  transition: all 0.2s ease;
+}
+.open.active::after{
+  border-bottom: 6px solid skyblue;
+  border-top: transparent;
+  transition: all 0.2s ease;
+}
+
+li{
+  font-size: 15px;
+  padding: 5px 5px 5px 15px;
+}
+ 
+ @media screen and(min-width: 750px){
+   .wrapper{
+     height: 100vh;
+   }
+   .slide{
+     height: 100vh;
+   }
+ }
