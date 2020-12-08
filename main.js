@@ -23,7 +23,8 @@ if (curentTime == slide.length - 1) {
 }
 }
 
-setInterval(Next, 5000)
+setInterval(Next, 5000);
+
 
 /*----------MENU ACCORDEON------------*/
 

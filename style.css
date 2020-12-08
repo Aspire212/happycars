@@ -44,6 +44,7 @@ a:link{
 .logo{
   width: 30%;
   height: 30%;
+  margin: 10px;
 }
 ul.menu{
   display: flex;
@@ -54,6 +55,11 @@ ul.menu li{
   font-size: 12px;
   text-transform: uppercase;
 }
+.title_text{
+  margin: -50px 0 20px 0;
+  font-size: 16px;
+  text-align: center;
+}
 
 .title{
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -62,6 +68,8 @@ ul.menu li{
   color: rgba(255, 255, 255, 0.9);
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
+  margin: 20px auto ;
+  color: #D72727E6;
 }
 .mywork{
    font-family: 'Fira Sans Condensed', sans-serif;
