@@ -1,3 +1,21 @@
+//header position
+
+const header = document.querySelector('.header')
+const height = window.innerHeight;
+let vhHeight = height * 0.55;
+window.addEventListener('scroll', ()=>{
+  if(window.scrollY >= vhHeight){
+  console.log('scroll');
+  header.style.top = "-100px";
+  }
+  else{
+      header.style.top = "0px";
+  }
+})
+
+
+
+
 //slider op
 let slide = document.querySelectorAll('.slide');
 let slides = document.querySelector('.slides');
@@ -26,7 +44,7 @@ if (curentTime == slide.length - 1) {
 setInterval(Next, 5000);
 
 
-/*----------MENU ACCORDEON------------*/
+/*----------MENU ACCORDEON------------
 
 const accordeon = document.querySelector('.accordeon ');
 const openArr = document.querySelectorAll('.open');
@@ -67,11 +85,11 @@ let addActive = (sel) => {
     /*if (itemTarget.classList.contains('closed')) {
       delActive(hiddenArr);
       delActive(openArr);
-    }*/
+    }
     //--------------------------------------
   //удаление класса по клику на li
   if (itemTarget.parentElement.classList.contains('hidden')) {
     itemTarget.parentElement.classList.remove('active');
     itemTarget.parentElement.previousElementSibling.classList.remove('active');
   }
-})
+})*/
