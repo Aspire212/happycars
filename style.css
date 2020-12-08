@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -57,23 +58,6 @@ ul.menu li {
     margin: 10px;
     font-size: 12px;
     text-transform: uppercase;
-}
-
-.title_text {
-    margin: -50px 0 20px 0;
-    font-size: 16px;
-    text-align: center;
-}
-
-.title {
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 62px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.9);
-    background: rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin: 20px auto;
-    color: #D72727E6;
 }
 
 .mywork {
@@ -167,6 +151,23 @@ ul.menu li {
     padding: 30px;
 }
 
+.title_text {
+    margin: -50px 0 20px 0;
+    font-size: 12pt;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 62px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px auto;
+    color: #D72727E6;
+}
+
 .title_h3 {
     text-align: center;
     padding: 20px;
@@ -179,7 +180,7 @@ ul.menu li {
 
 .services li {
     list-style-type: none;
-    font-size: 10pt;
+    font-size: 12pt;
     margin: 10px auto;
 }
 
