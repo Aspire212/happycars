@@ -1,6 +1,7 @@
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
+
 body {
     font-size: 15pt;
     background: black;
@@ -8,189 +9,205 @@ body {
     background: black;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-li{
-  list-style-type: none;
-}
-a{
-  text-decoration: none;
-  color: white;
-}
-a:link{
-  color: white;
+li {
+    list-style-type: none;
 }
 
-
-.header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 10;
-  transition: top 0.5s linear;
-  
-  
+a {
+    text-decoration: none;
+    color: white;
 }
 
-.logo{
-  width: 30%;
-  height: 30%;
-  margin: 10px;
-}
-ul.menu{
-  display: flex;
-}
-ul.menu li{
-  width: 80%;
-  margin: 10px;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.title_text{
-  margin: -50px 0 20px 0;
-  font-size: 16px;
-  text-align: center;
+a:link {
+    color: white;
 }
 
-.title{
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 62px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.2);
-  text-align: center;
-  margin: 20px auto ;
-  color: #D72727E6;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    transition: top 0.5s linear;
 }
-.mywork{
-   font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 23px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 30px;
+
+.logo {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
 }
+
+ul.menu {
+    display: flex;
+}
+
+ul.menu li {
+    width: 80%;
+    margin: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.title_text {
+    margin: -50px 0 20px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 62px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px auto;
+    color: #D72727E6;
+}
+
+.mywork {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 30px;
+}
+
 
 /* slider op*/
 
-.wrapper{
-  position: relative;
-  top:0;
-  left: 0px;
-  width: 100vw;
-  height: 70vh;
-  
+.wrapper {
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 100vw;
+    height: 70vh;
 }
 
- .slides{
-   position: absolute;
-   top: 0;
-   left: 0;
-
- }
- .slide{
-   width: 100vw;
-   height: 60vh;
-   position: absolute;
-   top: 0;
-   left: 0;
-   opacity: 0;
-   transition: all 1s linear;
- }
- .slide:nth-child(1){
-   background:  url(Image/Cars/Lc200.jpg) center center no-repeat;
-   background-size: cover;
- }
- .slide:nth-child(2) {
-   background:  url(Image/Cars/forester.jpg) center center no-repeat;
-   background-size: cover;
- }
- .slide:nth-child(3) {
-  background:  url(Image/Cars/Pajero.png) center center no-repeat;
-  background-size: cover;
- }
- .slide:nth-child(4) {
-   background: url(Image/Cars/patrol.jpg) center center no-repeat;
-   background-size: cover;
- }
-  .slide:nth-child(5) {
-  background:  url(Image/Cars/Fx37.jpg) center center no-repeat;
-  background-size: cover;
-  }
-   .slide:nth-child(6) {
-  background:  url(Image/Cars/Vitara.jpg) center center no-repeat;
-     background-size: cover;
-   }
- .slide_active{
-   opacity: 1;
-   transition: opacity 0.5 linear;
-   
- }
- .text{
-   padding-top: 10px;
-   text-align: center;
-   width: 70px;
-   height: 30px;
-   opacity: 1;
-   position: absolute;
-   bottom: 0px;
-   right: 0px;
-   color: white;
-   background: rgba(0, 0, 0, 0.5);
- }
- .container{
-   max-width: 1200px;
-   margin: 0px auto;
-   padding: 30px;
-
- }
- 
- .title_h3{
-  text-align: center;
-  padding: 20px;
-}
-.title_h5{
-  text-decoration: underline red;
-  text-align: center;
-}
-.services li{
-  list-style-type: none;
-  font-size: 10pt;
-  margin: 10px auto;
-}
-.fullWidth{
-  width: 100%;
-  background: url(Image/Fwcol.jpg) no-repeat;
-  background-size: cover;
-}
-.conteinerOne{
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  background: rgba(0, 0, 0, 0.57);
-
+.slides {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.services{
-  width: 50%;
-  padding: 10px;
-
+.slide {
+    width: 100vw;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s linear;
 }
- 
- /*--------accordeon-------*/
- /*.accordeon{
+
+.slide:nth-child(1) {
+    background: url(Image/Cars/Lc200.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(2) {
+    background: url(Image/Cars/forester.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(3) {
+    background: url(Image/Cars/Pajero.png) center center no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(4) {
+    background: url(Image/Cars/patrol.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(5) {
+    background: url(Image/Cars/Fx37.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(6) {
+    background: url(Image/Cars/Vitara.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide_active {
+    opacity: 1;
+    transition: opacity 0.5 linear;
+}
+
+.text {
+    padding-top: 10px;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+.title_h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.title_h4 {
+    text-decoration: underline red;
+    text-align: center;
+}
+
+.services li {
+    list-style-type: none;
+    font-size: 10pt;
+    margin: 10px auto;
+}
+
+.fullWidth {
+    width: 100%;
+    background: url(Image/Fwcol.jpg) no-repeat;
+    background-size: cover;
+}
+
+.conteinerOne {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    background: rgba(0, 0, 0, 0.57);
+}
+
+.services {
+    width: 50%;
+    padding: 10px;
+}
+
+
+/*--------accordeon-------*/
+
+
+/*.accordeon{
   position: relative;
   
 }
@@ -249,11 +266,12 @@ li{
   padding: 5px 5px 5px 15px;
 }
  */
- @media screen and(min-width: 750px){
-   .wrapper{
-     height: 100vh;
-   }
-   .slide{
-     height: 100vh;
-   }
- }
+
+@media screen and(min-width: 750px) {
+    .wrapper {
+        height: 100vh;
+    }
+    .slide {
+        height: 100vh;
+    }
+}
