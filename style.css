@@ -8,7 +8,7 @@ body {
     background: black;
     color: white;
     background: black;
-    background: url(Image/BGHappy.jpg) repeat-y;
+    background: black/*url(Image/BGHappy.jpg) repeat-y*/;
     background-size: cover;
 }
 
@@ -85,8 +85,6 @@ ul.menu li {
     left: 0px;
     width: 100vw;
     height: 60vh;
-    opacity: 0;
-    transition: opacity 0.5s linear;
 }
 
 .slides {
