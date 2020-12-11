@@ -2,10 +2,9 @@
 
 const header = document.querySelector('.header')
 const height = window.innerHeight;
-let vhHeight = height * 0.55;
+let vhHeight = height * 0.5;
 window.addEventListener('scroll', ()=>{
   if(window.scrollY >= vhHeight){
-  console.log('scroll');
   header.style.top = "-100px";
   }
   else{

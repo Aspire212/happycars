@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper_site {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.55);
 }
 
 * {
@@ -84,7 +84,7 @@ ul.menu li {
     top: 0;
     left: 0px;
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
 }
 
 .slides {
@@ -157,7 +157,7 @@ ul.menu li {
 }
 
 .title_text {
-    margin: -50px 0 20px 0;
+    margin: 0px 0 20px 0;
     font-size: 12pt;
     text-align: center;
 }
@@ -205,11 +205,61 @@ ul.menu li {
     padding: 10px;
 }
 
-@media screen and(max-width: 750px) {
-    .wrapper {
-        height: 100vh;
+@media screen and (max-width: 530px) {
+  .header{
+     background: rgba(0, 0, 0, .6);
+     height: 60px;
+     justify-content: space-between;
+
+  }
+    .logo{
+      width: 85px;
+      height: 35px;
+      position: absolute;
+      top: 0;
+      margin-left: 10px;
+
     }
-    .slide {
-        height: 100vh;
+    ul.menu{
+      display: none;
     }
+    .wrapper{
+      height: 40vh;
+    }
+    .slide{
+      height: 40vh;
+    }
+    .conteiner{
+      
+      min-width: 100vw;
+      margin: 0;
+      padding: 0;
+      
+    }
+    
+    .title{
+      line-height: 30px;
+      font-size: 30px;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .title_text{
+      text-align: left;
+      font-size: 12pt;
+    }
+    .conteinerOne{
+      min-width: 100%;
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+    .services{
+      width: 94%;
+    }
+    .title_h3{
+      font-size: 22px;
+    }
+    
 }
