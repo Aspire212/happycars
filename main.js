@@ -12,7 +12,30 @@ window.addEventListener('scroll', ()=>{
   }
 })
 
+//header media burger
+const mediaBTN = document.querySelector('.mediaBTN');
+const mediaMenu = document.querySelector('.media');
 
+mediaBTN.addEventListener('click',()=>{
+  mediaBTN.classList.toggle('mediaBTN_active');
+  mediaMenu.classList.toggle('media_active')
+if (mediaMenu.classList.contains('media_active')) {
+  document.querySelector('html').style.overflow = "hidden";
+}
+else{
+  document.querySelector('html').style.overflow = "scroll";
+}
+mediaMenu.addEventListener('click', (event)=>{
+  if(event.target.tagName === "A"){
+  mediaBTN.classList.remove('mediaBTN_active');
+  mediaMenu.classList.remove('media_active')    
+ document.querySelector('html').style.overflow = "scroll"; 
+  }
+})
+  
+})
+
+  
 
 
 //slider op
@@ -44,8 +67,6 @@ if (curentTime == slide.length - 1) {
 }
 
 window.onload = setInterval(Next, 5000);
-
-
 
 
 /*----------MENU ACCORDEON------------
