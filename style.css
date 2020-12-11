@@ -50,8 +50,8 @@ a:link {
 }
 
 .logo {
-    width: 30%;
-    height: 30%;
+    width: 100px;
+    height: 45px;
     margin: 10px;
 }
 
@@ -85,6 +85,8 @@ ul.menu li {
     left: 0px;
     width: 100vw;
     height: 60vh;
+    opacity: 0;
+    transition: opacity 0.5s linear;
 }
 
 .slides {

@@ -16,6 +16,10 @@ window.addEventListener('scroll', ()=>{
 
 
 //slider op
+let wrapper = document.querySelector('.wrapper');
+console.log(wrapper.style.marginTop)
+
+
 let slide = document.querySelectorAll('.slide');
 let slides = document.querySelector('.slides');
 let text = document.querySelector('.text');
@@ -39,8 +43,10 @@ if (curentTime == slide.length - 1) {
   }
 }
 }
+window.onload = ()=>{wrapper.style.opacity ="1";
+  setInterval(Next, 5000);
 
-window.onload = setInterval(Next, 5000);
+}
 
 
 /*----------MENU ACCORDEON------------
