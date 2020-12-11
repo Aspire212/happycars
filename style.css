@@ -6,12 +6,12 @@ body {
     font-size: 15pt;
     background: black;
     color: white;
-    background: url(Image/FWcol.jpg) repeat;
+    background: url(Image/Set.jpg) repeat;
     background-size: cover;
 }
 
 .wrapper_site {
-    background: rgba(0, 0, 0, 0.67);
+    background: rgba(0, 0, 0, 0.57);
 }
 
 * {
