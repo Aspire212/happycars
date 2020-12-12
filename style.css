@@ -416,6 +416,7 @@ ul.menu li {
   box-shadow: 0 0  5px #C0C2C3;
   border-radius: 10px;
   text-align: center;
+  width: 33%;
   
   padding: 10px;
 }
