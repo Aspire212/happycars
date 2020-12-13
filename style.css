@@ -271,9 +271,47 @@ ul.menu li {
   padding: 10px;
   text-align: center;
   width: 100%;
-  background: rgba(200, 32, 13, .4);
+  background: rgba(170, 32, 7, .6);
 }
 
+.scroll_btn {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 80%;
+  right: -130px;
+  transition: all 0.4s linear;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(107, 32, 7, .4);
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, .5);
+} 
+
+.scroll_btn:after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  border: 10px solid transparent;
+  border-bottom: 15px solid rgba(255, 255, 255, .6);
+  
+}
+.top {
+  visibility: visible;
+  right: 10px;
+  transition: all 0.4s linear;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+
+@media screen and (max-width: 1200px){
+  .container, .containerBTN, .conteinerOne{
+    width: 100%
+  }
+}
 @media screen and (max-width: 780px) {
   .header{
      background: rgba(0, 0, 0, 0.6);
@@ -298,6 +336,7 @@ ul.menu li {
       top: -24px;
       width: 40px;
       height: 52px;
+      cursor: pointer;
     }
     
     .mediaBTN{
@@ -431,22 +470,30 @@ ul.menu li {
   border-radius: 10px;
   text-align: center;
   width: 33%;
+  transition: all 0.2s ease;
+
   
   padding: 10px;
 }
 .phone{
   background: #20D40D;
+  transition: all 0.2s ease;
+
 }
 .email{
   background: #0276EA;
+  transition: all 0.2s ease;
+
 }
 .phone:hover, .email:hover{
   border: 2px solid red;
+  transition: all 0.2s ease;
 }
 .phone:active, .email:active{
   border: 3px solid red;
   background: black;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   transition: all 0.2s ease;
 }
     
 }

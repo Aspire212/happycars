@@ -66,6 +66,29 @@ if (curentTime == slide.length - 1) {
 }
 }
 
+
+//стрелка наверх
+const arrowUp = document.querySelector('.scroll_btn');
+
+
+
+let vhHeightTwo = height * 0.8;
+window.addEventListener('scroll', function(){
+	if(window.scrollY >= vhHeightTwo){
+		arrowUp.classList.add('top');
+	
+	}
+	else{
+		arrowUp.classList.remove('top');
+	}
+})
+arrowUp.addEventListener('click', function(){
+window.scrollTo(0, 0);
+}
+)
+
+
+
 window.onload = setInterval(Next, 5000);
 
 
