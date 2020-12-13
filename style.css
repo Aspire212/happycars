@@ -301,10 +301,13 @@ ul.menu li {
 .top {
   visibility: visible;
   right: 10px;
-  transition: all 0.4s linear;
   opacity: 0.8;
   z-index: 2;
+  transform: rotate(360deg);
+  transition: all 0.4s linear;
+
 }
+
 
 
 @media screen and (max-width: 1200px){
@@ -411,7 +414,9 @@ ul.menu li {
     
     }
     .media_active{
+      position: fixed;
       top: 0;
+      left: 0;
       transition: all 0.5s linear;
     }
     .media li:last-child {

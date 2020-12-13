@@ -70,8 +70,6 @@ if (curentTime == slide.length - 1) {
 //стрелка наверх
 const arrowUp = document.querySelector('.scroll_btn');
 
-
-
 let vhHeightTwo = height * 0.8;
 window.addEventListener('scroll', function(){
 	if(window.scrollY >= vhHeightTwo){
