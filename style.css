@@ -20,9 +20,7 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-.menu a:active,
- .media-menu a:active
-{
+a:active{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     color: red;
 }
@@ -78,6 +76,9 @@ ul.menu li {
 
     text-align: center;
     padding: 30px;
+}
+.mywork>a:active{
+      color: rgba(255, 255, 255, 0.9);
 }
 .lightwidget-widget{
   background: rgba(255, 255, 255,  .5);
@@ -203,6 +204,10 @@ ul.menu li {
   padding: 20px;
   margin: 20px auto;
 }
+.title_myGarage>a:active{
+      color: rgba(255, 255, 255, 0.9);
+
+}
 .mygarage_text{
   margin:20px auto;
 }
@@ -294,6 +299,7 @@ ul.menu li {
       width: 40px;
       height: 52px;
     }
+    
     .mediaBTN{
       width: 30px;
       height: 2px;
@@ -359,6 +365,8 @@ ul.menu li {
       z-index: 8;
       text-align: center;
       font-size: 30px;
+      text-transform: uppercase;
+      line-height: 50px;
       padding-top: 70px;
       transition: all 0.5s linear;
     
@@ -366,6 +374,12 @@ ul.menu li {
     .media_active{
       top: 0;
       transition: all 0.5s linear;
+    }
+    .media li:last-child {
+      position: absolute;
+      bottom: 10%;
+      left: 10%;
+      right: 10%;
     }
     .wrapper{
       height: 40vh;
