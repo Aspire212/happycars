@@ -305,6 +305,15 @@ ul.menu li {
   transition: all 0.4s linear;
 
 }
+.containerBTNPC{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+.containerBTNPC > .pnone{
+  cursor: pointer;
+  font-size: 25px;
+}
 
 
 
@@ -465,6 +474,9 @@ ul.menu li {
       display: flex;
       justify-content: space-evenly;
       margin-bottom: 20px;
+    }
+    .containerBTNPC{
+      display: none;
     }
     
     
