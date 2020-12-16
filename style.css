@@ -309,8 +309,9 @@ ul.menu li {
   display: flex;
   justify-content: space-around;
   margin: 20px auto;
+  max-width: 1200px;
 }
-.containerBTNPC >.pnone{
+.containerBTNPC{
   cursor: pointer;
   font-size: 25px;
 }
