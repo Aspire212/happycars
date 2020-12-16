@@ -276,7 +276,7 @@ ul.menu li {
   width: 40px;
   height: 40px;
   position: fixed;
-  top: 80%;
+  top: 70vh;
   right: -130px;
   transition: all 0.4s linear;
   z-index: 2;
@@ -310,7 +310,7 @@ ul.menu li {
   justify-content: space-around;
   margin: 20px auto;
 }
-.containerBTNPC > .pnone{
+.containerBTNPC >.pnone{
   cursor: pointer;
   font-size: 25px;
 }
