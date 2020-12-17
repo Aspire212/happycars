@@ -97,11 +97,12 @@ for (let anchor of anchors) {
   }
 }
 
-setInterval(Next, 5000);
 
 window.onload = () => {
   let preload = document.querySelector('.preload');
-  preload.style.display="none"
+  preload.style.display="none";
+  setInterval(Next, 5000);
+
 }
 
 /*----------MENU ACCORDEON------------
