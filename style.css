@@ -193,7 +193,7 @@ body {
     font-size: 15pt;
     background: black;
     color: white;
-    background: url(Image/BGHappy.jpg) repeat;
+    background: black repeat;
     background-size: cover;
 }
 
