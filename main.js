@@ -99,7 +99,6 @@ for (let anchor of anchors) {
 
 window.onload = setInterval(Next, 5000);
 
-
 /*----------MENU ACCORDEON------------
 
 const accordeon = document.querySelector('.accordeon ');
