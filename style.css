@@ -207,11 +207,14 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-a:active{
+
+a[href^="#"]:active{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     color: red;
 }
-
+a[href^="#"]:hover{
+  text-decoration: underline;
+}
 li {
     list-style-type: none;
 }
@@ -511,6 +514,9 @@ ul.menu li {
   .container, .containerBTN, .conteinerOne{
     width: 100%
   }
+  a[href^="#"]:hover {
+    text-decoration: none;
+  }
 }
 @media screen and (max-width: 780px) {
   .header{
@@ -633,6 +639,9 @@ ul.menu li {
       width: 100vw;
       padding: 10px;
       
+    }
+    a[href^="#"]:hover {
+      text-decoration: none;
     }
     
     .title{
